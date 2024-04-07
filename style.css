@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  background: #ccc;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.con{
+  padding: 10px;
+  background: white;
+  border-radius: 12px;
+}
+
+.con > h1 {
+  text-align: center;
+  margin-block: 20px;
+}
+
+.accordion {
+  padding: 10px 15px;
+  width: 400px;
+}
+
+.accordion-title {
+  background: rebeccapurple;
+  color: white;
+  padding: 4px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+i {
+  font-size: 25px;
+}
+
+.accordion-content {
+  padding: 5px;
+  background: white;
+  transition: all 0.5s;
+  display: none;
+}
+
+.accordion-content.active {
+  display: block;
+}
